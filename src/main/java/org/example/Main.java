@@ -73,10 +73,10 @@ public class Main
                 System.out.println("Некоректне введення! Потрібно вводити число");
                 sc.nextLine();
             }catch (InvalidInputException e) {
-                System.out.println("Некоректне введення! Квадратний корінь не може бути від'ємним числом");
+                System.out.println("Некоректне введення! "+ e.getMessage());
             }
             catch (ArithmeticException e) {
-                System.out.println("Некоректне введення! На нуль ділити не можна");
+                System.out.println("Некоректне введення! " + e.getMessage());
             }catch (Exception e) {
                 System.out.println("Помилка: " + e.getMessage());
             }
